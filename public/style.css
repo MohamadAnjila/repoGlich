@@ -1,0 +1,126 @@
+* {
+  font-family: arial;
+  margin: 0;
+  color: #222;
+}
+
+body {
+  padding: 2vw;
+}
+
+main {
+  max-widh: 800px;
+  margin: 0 auto;
+}
+
+input, button, select {
+  font-size: inherit;
+  padding: 0.5em;
+  border-radius: 3px;
+  border: 2px solid #ef6b00;
+  outline-width: 0;
+}
+
+.buttonRow, .inputRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.inputRow {
+  justify-content: flex-start;
+}
+.inputRow > input[type="text"], .inputRow > input[type=""], .inputRow > label {
+  flex: 1;
+}
+
+.buttonRow > *, .inputRow > * {
+  margin-left: 1em;
+}
+.buttonRow > *:first-child, .inputRow > *:first-child {
+  margin-left: 0;
+}
+
+.inputRow + *, .buttonRow + * {
+  margin-top: 15px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5em 0 2em 0;
+  background-color: white;
+}
+
+nav > a {
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #ccc;
+  flex: 1;
+  text-align: center;
+  transition: border-color 1s;
+  margin-left: 8px;
+}
+
+nav > a:first-child {
+  margin-left: 2px;
+}
+
+nav > a:hover, nav > a.active {
+  border-color: #ef6b00;
+}
+
+a {
+  cursor: pointer;
+}
+
+div.modalBg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.modal {
+  max-width: 700px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 10px 20px black;
+  min-width: 400px;
+}
+
+section.card {
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.05);
+  margin-top: 20px;
+  border: 1px solid #eee;
+  padding: 15px;
+}
+
+section.priority {
+  margin-top: 40px;
+}
+
+button {
+  color: #ef6b00;
+  background-color: transparent;
+}
+
+.material-icons {
+  color: #ef6b00;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+h2 > .material-icons {
+  float: right;
+}
+
