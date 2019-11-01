@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^5.4.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0",
+    "webTechLib": "git+https://api.glitch.com/git/webtech-lib#4425061c7b255e5345500edcc5fdde7f19c3ce31"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
